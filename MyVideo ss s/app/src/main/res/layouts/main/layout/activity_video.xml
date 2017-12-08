@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".VideoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/open_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请问你要给TA开门吗?"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/yes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:text="YES"/>
+    <Button
+        android:id="@+id/no_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:layout_alignBottom="@+id/yes_btn"
+        android:layout_toEndOf="@+id/yes_btn"
+        android:layout_marginStart="57dp"/>
+    <TextView
+        android:id="@+id/response_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yes_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>

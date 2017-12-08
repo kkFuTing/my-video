@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<ImageSwitcher-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp">-->
+
+    <!--</ImageSwitcher>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.edu.bunz.ftapp.ImageSlideshow.ImageSlideshow
+            android:id="@+id/is_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|left"
+        android:text="珠海全视通"
+        android:textSize="30dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/MC"
+                style="@style/btn01"
+                android:text="通话对讲"/>
+
+            <Button
+                android:id="@+id/call_Record_Button"
+                style="@style/btn01"
+                android:text="呼叫记录"/>
+
+            <Button
+                android:id="@+id/MS"
+                style="@style/btn01"
+                android:text="临时密码"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/call_the_police_record"
+                style="@style/btn01"
+                android:text="报警记录"/>
+
+            <Button
+                android:id="@+id/doorRecord_Button"
+                style="@style/btn01"
+                android:text="门禁记录"/>
+
+            <Button
+                android:id="@+id/push_message"
+                style="@style/btn01"
+                android:text="社区公告"/>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/home"
+                style="@style/btn01"
+                android:text="视频监控"/>
+
+            <Button
+                android:id="@+id/sen"
+                style="@style/btn01"
+                android:text="网上商城"/>
+
+            <Button
+                android:id="@+id/ll"
+                style="@style/btn01"
+                android:text="智能家居"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+    </ScrollView>

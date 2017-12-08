@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </ImageSwitcher>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|left"
+        android:text="珠海全视通"
+        android:textSize="30dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/MC"
+                style="@style/btn02"
+                android:text="家门前"/>
+
+            <Button
+                android:id="@+id/MR"
+                style="@style/btn02"
+                android:text="小区门口"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/preStep"
+                style="@style/btn02"
+                android:text="公司前门"/>
+
+            <Button
+                android:id="@+id/clearPre"
+                style="@style/btn02"
+                android:text="公司后门"/>
+
+
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+</LinearLayout>

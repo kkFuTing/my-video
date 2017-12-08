@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/crime_item_container"
+                                             android:orientation="vertical"
+                                             android:background="@color/white"
+                                             android:layout_gravity="center|top"
+                                             android:layout_marginTop="36dp"
+                                             android:layout_width="360dp"
+                                             android:layout_height="wrap_content"
+                                             tools:layout_editor_absoluteY="81dp"
+                                             tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/receive_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Crime Title"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/receive_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Crime Date"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/receive_title"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:id="@+id/receive_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CrimeTime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receive_date"
+        tools:ignore="HardcodedText"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
